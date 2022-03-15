@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Deque;
 
 class DequeNodeTest<T> {
-    private DequeNode deque;
+    private DequeNode<T> deque;
     private T item;
     private DequeNode<T> next;
     private DequeNode<T> previous;
@@ -23,7 +23,8 @@ class DequeNodeTest<T> {
 
     @Test
     public void testComputeIfNodeIsTheFirstNode() {
-        
+        previous = null;
+        assertTrue(deque.isFirstNode());
     }
 
 
