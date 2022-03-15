@@ -16,7 +16,7 @@ class DequeNodeTest<T> {
     @AfterEach
     private void finish() {
         deque = null;
-    }
+    }  
 
 
 }
